@@ -1,0 +1,37 @@
+.btn-pink{
+	background-color: #ff2f63;
+	color: white;
+	text-transform: capitalize;
+	padding: 15px 20px;
+	border-radius: 4px;
+
+}
+
+.btn-pink:hover{
+	background-color: #e81e61;
+	color: white;
+}
+
+@media (max-width: 600px){
+	.btn-pink{
+		padding: 15px 10px;
+	}
+}
+
+#btn-apply{
+	display: block;
+  text-align: center;
+	background-color: #ff2f63;
+	color: white;
+	text-transform: capitalize;
+	padding: 15px 20px;
+	border-radius: 4px;
+	width: 100px;
+	margin: 0px auto;
+
+}
+
+#btn-apply:hover{
+	background-color: #e81e61;
+	color: white;
+}

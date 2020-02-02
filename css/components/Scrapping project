@@ -1,0 +1,46 @@
+
+# First, we require some 'gems' - nokogiri and open-uri - to send HTTP requests
+require "nokogiri"
+require "open-uri"
+
+#chose your items
+puts "What are you lookking for?
+'hoodies',
+'shirts',
+'mens-jackets',
+'mens-pants'
+'mens-shorts'
+'mens-sweaters'"
+item=gets
+item= item.chomp
+
+#chose your size
+puts "What size? From xs to xxl"
+size=gets
+size= size.chomp
+
+
+url = "https://shop.eu.deuscustoms.com/collections/#{item}/size_#{size}"
+doc = Nokogiri::HTML(open(url))
+
+# getting the items name
+items_name = doc.search("h2.entry-title")
+names=[]
+for name in items_name
+  names.append(name.text)
+end
+#puts names
+
+#getting the prices
+items_price= doc.search(".entry-price")
+prices=[]
+for item in items_price
+  prices.append(item.text.strip[0,11])
+end
+#puts prices
+
+#concatenation
+for i in (0...items_name.size)
+    puts "- " + names[i]+ ": " + prices[i]
+end
+

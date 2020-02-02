@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Lora|Roboto");
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+@import url("components/testimony.css");
+
+body{
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	margin: 0px;
+  background-color: #F7F5F5;
+
+
+}
+
+
+h1,h2,h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+span{
+  color: #ff2f63;
+}
+
+.centered{
+  margin-top: 90px;
+  display: block;
+  text-align: center
+
+}
+
+#header-text{
+  margin:100px 200px;
+}
+
+@media (max-width: 600px){
+   #header-text{
+  margin:100px 50px;
+    }
+ }
+

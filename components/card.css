@@ -1,0 +1,174 @@
+.cards{
+	display: flex;
+    flex-wrap: wrap;
+    width: 970px;
+    margin: 20px auto;
+
+}
+
+
+@media (max-width: 980px){
+    .cards{
+        width: 800px;
+    }
+}
+
+@media (max-width: 800px){
+    .cards{
+        width: 700px;
+    }
+}
+
+
+@media (max-width: 700px){
+    .cards{
+        width: 600px;
+    }
+}
+
+@media (max-width: 650px){
+    .cards{
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px){
+    .cards{
+        width: 400px;
+      }
+}
+
+
+
+.card{
+	padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    margin:10px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+.card h3{
+    color: white;
+    flex-grow: 1;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+#paris {
+  background-image: linear-gradient(-205deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.4) 30%), url(../../images/paris.jpg);
+}
+
+#london {
+  background-image: linear-gradient(-205deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.4) 30%), url(../../images/london.jpg);
+}
+
+#dublin {
+  background-image: linear-gradient(-205deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.4) 30%), url(../../images/dublin.jpg);
+}
+
+#newyork {
+  background-image: linear-gradient(-205deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.4) 30%), url(../../images/newyork.jpg);
+}
+
+
+/*.card img{
+	width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+
+
+}
+*/
+
+
+
+
+/*.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    margin:10px;
+    flex-basis: 250px;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.card img{
+    width: 150px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.card h3 {
+    flex-grow: 1;
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: normal;
+    padding-right: 20px;
+    color: white;
+}
+
+#paris {
+  background-image: linear-gradient(-225deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.6) 30%), url(../../images/paris.jpg);
+}
+
+#london {
+  background-image: linear-gradient(-225deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.6) 30%), url(../../images/londres.jpg);
+}
+
+#rio {
+  background-image: linear-gradient(-225deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.6) 30%), url(../../images/rio.jpg);
+}
+
+#ny {
+  background-image: linear-gradient(-225deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.6) 30%), url(../../images/ny.jpg);
+}
+
+#delhi {
+  background-image: linear-gradient(-225deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.6) 30%), url(../../images/delhi.jpg);
+}
+
+#beijing {
+  background-image: linear-gradient(-225deg, rgba(255,86,27,0.5) 0%, rgba(0,0,0,0.6) 30%), url(../../images/beijing.jpg);
+}
+
+#other {
+  background-color: #F95859;
+  display: block;
+  padding:5px;
+}
+
+#other p {
+  color:white;
+  font-weight: lighter;
+}
+
+
+
+
+
+
